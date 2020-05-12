@@ -1,0 +1,402 @@
+.schedule_inner .tile {
+    position: relative;
+    height: 5em;
+    width: 4em;
+    color: #177eba;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 0.25em;
+}
+
+.schedule_inner .tile:hover {
+    background-color: #70e2c9;
+}
+
+.r_b_g_wrapped {
+    flex-wrap: wrap;
+}
+.instagram .preview{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.btn-delete-image {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: #fff;
+    background: #f00;
+    padding: 3px;
+    border-radius: 35px;
+    font-size: 10px;
+    height: 12px;
+    width: 12px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #999;
+}
+.schedule_inner .tile-busy {
+    background-color: #c6ebf3;
+    border: 1px solid #1c7db9;
+}
+
+.schedule_inner .tile-expired {
+  background-color:#D3D3D3;
+  border: 1px solid #D3D3D3;
+}
+
+.schedule_inner .modal_submit_button {
+    margin-top: 4px;
+    /*display: flex;*/
+}
+
+.schedule_inner .tile-selected {
+    background-color: #fff6f7;
+    border: 1px solid #fe7084;
+}
+
+.event_marker {
+    position: absolute;
+    border: 1px solid #1c7db9;
+    height: 12%;
+    width: 35%;
+    top: 10%;
+    left: 15%;
+}
+
+.event_marker_fill {
+    background-color: #1c7db9;
+}
+
+.highlight-container {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(75, 73, 71, 0.51);
+}
+
+.schedule_inner .action_selector_container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+    background-color: #177eba;
+    padding-left: 5%;
+    top: 8%;
+    padding-right: 5%;
+    bottom: 8%;
+    left: 20%;
+    right: 20%;
+    max-width: 84%;
+    overflow-y: scroll;
+    padding-bottom: .5em;
+}
+
+.schedule_inner .prod_selector-container {
+    position: fixed;
+    background-color: #177eba;
+    top: 8%;
+    bottom: 8%;
+    left: 20%;
+    right: 20%;
+    max-width: 84%;
+    z-index: 10000;
+    overflow-y: scroll;
+}
+
+.schedule_inner .action_selector_container h1 {
+    font-size: 48px;
+    color: whitesmoke;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+.schedule_inner .action_selector_container h3 {
+    color: whitesmoke;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+
+.schedule_inner .gradient-button {
+    border-radius: 0 8px 8px 8px;
+    background-image: linear-gradient(to right, rgb(28, 125, 185), rgb(112, 226, 201));
+    padding: 0.5em;
+    margin-top: 1em !important;
+}
+
+.paper_wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  margin-bottom: .75em;
+}
+
+.schedule_inner {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.schedule_inner .modal_popover {
+    background-color: transparent;
+    width: 100%;
+    flex:1;
+    border: 1px solid whitesmoke !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+    line-height: 2em !important;
+
+}
+.text_chip{
+    background-color: transparent;
+    width: auto;
+    margin: 0 0.5em 0.5em 0 !important;
+    /*margin-right: 0.5em !important;
+    margin-left: 0.5em !important;
+    margin-right: 0.5em !important;*/
+    background-color: whitesmoke !important;
+    border: 0;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+    line-height: 28px !important;
+    height: 28px !important;
+    min-height: 0 !important;
+}
+.schedule_inner .bottom_button {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 0.5em !important;
+    border: 1px solid whitesmoke !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+    line-height: 2em !important;
+}
+.buttons_wrapper{
+    display: flex;
+    flex: 1;
+    width: 95%;
+    margin-top: 12px;
+    justify-content: space-between;
+    /*margin-left: 1em;
+    margin-right: 1em;*/
+}
+
+.schedule_inner .selector_ok_button {
+    background-color: whitesmoke !important;
+    border: 1px solid #177eba !important;
+    color: #177eba;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+    line-height: 2em !important;
+    position: fixed !important;
+    width: 60%;
+    z-index: 1000;
+    bottom: 8%;
+    left: 20%;
+    right: 20%;
+}
+
+.schedule_inner .image_container_modal {
+    width: 50%;
+    position: relative;
+    flex: 0 1;
+    margin: 2px;
+}
+
+.schedule_inner .image_container_modal .image {
+    min-width: 150px;
+    min-height: 150px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.schedule_inner .remove-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 5px;
+}
+.editor-section-container{
+    padding-bottom: 60px;
+}
+
+.editor-section-container .text-area{
+    width: 80%;
+    height: 60%;
+    /* margin: 20% 10%; */
+    position: relative;
+    /* top: 0; */
+}
+
+.editor-section-container .text-area .input {
+    /* height: 100%; */
+    position: absolute;
+}
+
+/*.schedule_inner*/
+.time_label {
+    position: absolute;
+    font-weight: bold;
+    color: #177eba;
+    font-size: 8px;
+    bottom: 8%;
+    left: 8%;
+    background-color: whitesmoke;
+    line-height: 9px;
+}
+.left_toggle_button{
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-width: 1px 0 1px 1px !important;
+}
+.right_toggle_button{
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-width: 1px 1px 1px 0 !important;
+}
+.toggle_button{
+    background-repeat: no-repeat;
+    flex:1;
+    border-color: whitesmoke !important;
+    border-style: solid !important;
+    min-width: 0 !important;
+    background-position-x: center !important;
+    background-position-y: 10% !important;
+    background-size: 40%;
+}
+.toggle-container{
+    margin-right: 16px;
+    display: flex;
+    min-width: 100px;
+}
+.share-type-popover{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    height:36px;
+    min-width: 100px;
+    background-size: 24px;
+}
+
+.share_type_label {
+    position: absolute;
+    bottom: 35%;
+    left: 8%;
+    height: 14px;
+    width: 14px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 450px) {
+
+    .schedule_inner .tile:hover {
+        background-color: #fff6f7;
+        border: 1px solid #fe7084;
+    }
+
+    .schedule_inner .image_container_modal .image {
+        min-width: 90px;
+        min-height: 90px;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .schedule_inner .action_selector_container {
+        overflow: scroll;
+        position: absolute;
+        background-color: #177eba;
+        padding: 5%;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        max-width: 100%;
+    }
+
+    .schedule_inner .prod_selector-container {
+        overflow: scroll;
+        background-color: #177eba;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+    }
+
+    .schedule_inner .selector_ok_button {
+
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .schedule_inner .action_selector_container h1 {
+        font-size: 48px;
+        color: whitesmoke;
+        margin-top: 0.5em;
+        margin-bottom: 0.25em;
+    }
+}
+@media screen and (max-height: 560px) {
+    .schedule_inner .paper_wrapper {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+}
+
+
+@media screen and (min-width: 720px) {
+    .image_set_button_margin{
+        /*margin-left: 16px !important;*/
+    }
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.btn {
+  color: white;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    /* padding: 8px 20px; */
+    font-size: 16px;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px 0;
+}
+
+.upload-btn-wrapper input[type=file] {
+position: absolute;
+    left: 0;
+    top: 11px;
+    opacity: 0;
+    bottom: 11px;
+    right: 0;
+    width: 100%;
+}

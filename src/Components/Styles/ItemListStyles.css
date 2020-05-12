@@ -1,0 +1,45 @@
+.column {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px !important;
+    min-width: 0;
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+}
+.column_icon {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px !important;
+    padding-left: 0 !important;
+    padding-right: 1em !important;
+    width: 3em;
+}
+.column_image {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px !important;
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+    width: 3em;
+}
+/*@media (min-width: 700px) {
+    .column_image  {
+        width: 10%;
+    }
+}
+@media (max-width: 480px) {
+    .column_image  {
+        width: 15%;
+    }
+}*/
+.column_price {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    width: 3em;
+}
+.table {
+    /*table-layout: auto !important;*/
+}
+.iconButton {
+    padding: 0 !important;
+}
+

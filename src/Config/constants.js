@@ -1,0 +1,2 @@
+export const OUTPUT_SMALL_POST_WIDTH = 600;
+export const OUTPUT_SMALL_POST_HEIGHT = 315;
